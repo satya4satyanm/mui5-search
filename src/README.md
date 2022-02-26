@@ -33,5 +33,33 @@ This package uses React 17.0.2 and mui 5.4.3
 If you are using a different version of react or mui, please stop using this as it will clash with your project versions
 
 
-## TBD
+## Advanced Version (Coming soon)
+
 Auto complete
+Size (Small and Normal)
+Accessibility
+option to enable keyboard enter
+Input validation based on regexp
+Cross Browser Fix
+CSP fixes
+Minify
+
+
+
+## Contribute
+
+Checkout the code.
+Create a feature or bugfix branch
+Update or fix the code
+Raise PR to Master branch
+If everything looks good, I will pull in the PR
+
+
+## Please Donate
+
+We are a team of advanced developers.
+We need a coffee to discuss and come up with new components like this and to update our existing components
+
+Buy us one!
+
+Please see our components here - Coming Soon

@@ -1,6 +1,6 @@
 {
   "name": "mui5-search",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Material UI ^5 simple search.",
   "main": "lib/index.js",
   "scripts": {
@@ -27,7 +27,6 @@
     "@mui/icons-material": "^5.4.2",
     "@mui/material": "^5.4.3",
     "axios": "^0.26.0",
-    "gh-pages": "^1.2.0",
     "prettier": "^2.0.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

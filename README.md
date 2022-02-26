@@ -9,9 +9,9 @@ npm i --save mui5-search
 ## Usage
 
 ```js
-import mui5search from "mui5-search";
+import Mui5search from "mui5-search";
 
-return <mui5search />;
+return <Mui5search />;
 ```
 
 ### SearchBar Properties

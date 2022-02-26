@@ -1,0 +1,21 @@
+{
+  "name": "mui5-search",
+  "version": "1.0.0",
+  "description": "Material UI ^5 simple search.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Satyanarayan Mishra",
+  "license": "ISC",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/satya4satyanm/mui5-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/satya4satyanm/mui5-search/issues"
+  },
+  "homepage": "https://github.com/satya4satyanm/mui5-search"
+}

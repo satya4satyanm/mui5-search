@@ -22,14 +22,12 @@ exports.Mui5search = function (props) {
         variant='standard'
         value={searchText}
         onChange={e => {
-          setSearchText({
-            searchText: e.target.value
-          })
+          setSearchText(e.target.value)
           console.log('Search text set to ' + e.target.value)
         }}
       />
       {/* <ClearIcon></ClearIcon> */}
-      <SearchIcon onclick={triggerSearch}></SearchIcon>
+      <SearchIcon onClick={triggerSearch}></SearchIcon>
     </>
   )
 }

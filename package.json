@@ -1,13 +1,24 @@
 {
   "name": "mui5-search",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Material UI ^5 simple search.",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib --copy-files",
     "prettier": "prettier --write \"**/*.{json,md,js}\""
   },
-  "keywords": [],
+  "keywords": [
+    "MUI Search",
+    "MUI 5 Search",
+    "MaterialUI Search",
+    "MaterialUI 5 Search",
+    "Material UI Search",
+    "Material UI 5 Search",
+    "MaterialUI Simple Search",
+    "MaterialUI 5 Simple Search",
+    "Material UI Simple Search",
+    "Material UI 5 Simple Search"
+  ],
   "author": "Satyanarayan Mishra",
   "license": "ISC",
   "repository": {

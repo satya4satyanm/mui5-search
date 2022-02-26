@@ -2,14 +2,21 @@
   "name": "mui5-search",
   "version": "1.0.0",
   "description": "Material UI ^5 simple search.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib --copy-files",
+    "prepare": "babel src -d lib --copy-files",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "publish-docs": "npm run styleguide:build && npm run gh-pages",
+    "gh-pages": "./node_modules/.bin/gh-pages -d styleguide",
+    "prettier": "prettier --write \"**/*.{json,md,js}\""
   },
   "keywords": [],
   "author": "Satyanarayan Mishra",
   "license": "ISC",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/satya4satyanm/mui5-search.git"
@@ -17,5 +24,27 @@
   "bugs": {
     "url": "https://github.com/satya4satyanm/mui5-search/issues"
   },
-  "homepage": "https://github.com/satya4satyanm/mui5-search"
+  "homepage": "https://github.com/satya4satyanm/mui5-search",
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "gh-pages": "^1.2.0",
+    "prettier": "^2.0.5",
+    "react-styleguidist": "^11.2.0",
+    "@mui/material": "^5.4.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@mui/icons-material": "^5.4.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@mui/icons-material": "^5.4.2"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
 }

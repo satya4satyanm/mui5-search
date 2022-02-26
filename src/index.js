@@ -1,14 +1,35 @@
-import React from "react";
-import ClearIcon from "@mui/icons-material/Clear";
-import SearchIcon from "@mui/icons-material/Search";
+import React from 'react'
+import { useState } from 'react'
+// import ClearIcon from "@mui/icons-material/Clear"
+import SearchIcon from '@mui/icons-material/Search'
+import TextField from '@mui/material/TextField'
+import axios from 'axios'
 
-exports.Mui5search = function () {
-  console.log("This is a message from mui 5 search.");
+exports.Mui5search = function (props) {
+  const [searchText, setSearchText] = useState('')
+
+  const triggerSearch = () => {
+    console.log("URL " + props.url + " CallBack : " + props.cb)
+    axios.post(props.url, JSON.stringify({"searchTerm": searchText})).then(props.cb(response))
+  }
 
   return (
     <>
-      <ClearIcon></ClearIcon>
-      <SearchIcon></SearchIcon>
+      <TextField
+        id='searchText'
+        label='Search'
+        placeholder='Search'
+        variant='standard'
+        value={searchText}
+        onChange={e => {
+          setSearchText({
+            searchText: e.target.value
+          })
+          console.log('Search text set to ' + e.target.value)
+        }}
+      />
+      {/* <ClearIcon></ClearIcon> */}
+      <SearchIcon onclick={triggerSearch}></SearchIcon>
     </>
-  );
-};
+  )
+}

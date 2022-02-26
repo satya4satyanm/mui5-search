@@ -1,6 +1,6 @@
 {
   "name": "mui5-search",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Material UI ^5 simple search.",
   "main": "lib/index.js",
   "scripts": {
@@ -24,13 +24,14 @@
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
+    "@mui/icons-material": "^5.4.2",
+    "@mui/material": "^5.4.3",
+    "axios": "^0.26.0",
     "gh-pages": "^1.2.0",
     "prettier": "^2.0.5",
-    "react-styleguidist": "^11.2.0",
-    "@mui/material": "^5.4.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "@mui/icons-material": "^5.4.2"
+    "react-styleguidist": "^11.2.0"
   },
   "peerDependencies": {
     "react": "^17.0.2",

@@ -11,9 +11,7 @@ npm i --save mui5-search
 ```js
 import mui5search from "mui5-search";
 
-return (
-  <mui5search/>
-);
+return <mui5search />;
 ```
 
 ### SearchBar Properties
@@ -32,7 +30,6 @@ return (
 | searchIcon      | `node`   | `<SearchIcon style={{ color: grey[500] }} />` | Override the search icon.                               |
 | style           | `object` | `null`                                        | Override the inline-styles of the root element.         |
 | value           | `string` | `''`                                          | The value of the text field.                            |
-
 
 ## License
 

@@ -10,7 +10,7 @@ exports.Mui5search = function (props) {
 
   const triggerSearch = () => {
     console.log("URL " + props.url + " CallBack : " + props.cb)
-    axios.post(props.url, JSON.stringify({"searchTerm": searchText})).then(props.cb(response))
+    axios.post(props.url, JSON.stringify({"searchTerm": searchText})).then(response => props.cb(response))
   }
 
   return (

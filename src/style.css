@@ -1,0 +1,19 @@
+.s1 {
+    border: 1px solid rgba(200,200,200,1);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.s2 {
+    cursor: pointer;
+    padding-top: 7px;
+    margin-left: -40px;
+    z-index: 2;
+}
+.s1 svg {
+    margin: 16px 11px 7px 11px;
+}
+
+.s2 svg {
+    margin: 20px;
+}
+

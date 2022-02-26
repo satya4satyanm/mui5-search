@@ -4,30 +4,59 @@ import { useState } from 'react'
 import SearchIcon from '@mui/icons-material/Search'
 import TextField from '@mui/material/TextField'
 import axios from 'axios'
+import './style.css'
 
 exports.Mui5search = function (props) {
   const [searchText, setSearchText] = useState('')
 
   const triggerSearch = () => {
-    console.log("URL " + props.url + " CallBack : " + props.cb)
-    axios.post(props.url, JSON.stringify({"searchTerm": searchText})).then(response => props.cb(response))
+    axios
+      .post(props.url, { searchTerm: searchText })
+      .then(response => props.cb(response.data))
   }
 
   return (
     <>
-      <TextField
-        id='searchText'
-        label='Search'
-        placeholder='Search'
-        variant='standard'
-        value={searchText}
-        onChange={e => {
-          setSearchText(e.target.value)
-          console.log('Search text set to ' + e.target.value)
-        }}
-      />
+      {props.opt === 1 ? (
+        <TextField
+          id='outlined-search'
+          label='Search'
+          type='search'
+          value={searchText}
+          onChange={e => {
+            setSearchText(e.target.value)
+          }}
+        />
+      ) : props.opt === 2 ? (
+        <TextField
+          id='filled-search'
+          label='Search'
+          type='search'
+          variant='filled'
+          value={searchText}
+          onChange={e => {
+            setSearchText(e.target.value)
+          }}
+        />
+      ) : (
+        <TextField
+          id='standard-search'
+          label='Search'
+          placeholder='Search'
+          variant='standard'
+          value={searchText}
+          onChange={e => {
+            setSearchText(e.target.value)
+          }}
+        />
+      )}
       {/* <ClearIcon></ClearIcon> */}
-      <SearchIcon onClick={triggerSearch}></SearchIcon>
+      <div
+        className={props.opt === 1 ? 's1' : props.opt === 2 ? 's1' : 's2'}
+        onClick={triggerSearch}
+      >
+        <SearchIcon></SearchIcon>
+      </div>
     </>
   )
 }

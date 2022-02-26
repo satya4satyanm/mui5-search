@@ -20,7 +20,8 @@ return <Mui5search />;
 | --------------- | --------    | ---------------- | ------------------------------------------------------- |
 | url             | `string`    |                  | POST endpoint                                           |
 | cb              | `function`  |                  | Callback function to receive response data              |
-| opt             | `number`    | 0                | Theme - material ui style                               |
+| opt             | `number`    | 3                | Theme - material ui style ( 1, 2, 3 )                   |
+| size            | `string`    | ""               | Field size - "s"                                        |
 
 ## License
 
@@ -32,10 +33,15 @@ The files included in this repository are licensed under the ISC license.
 This package uses React 17.0.2 and mui 5.4.3
 If you are using a different version of react or mui, please stop using this as it will clash with your project versions
 
+## Local Development
+
+Uninstall npm package
+install local package npm i path\to\mui5-search
+npm link path\to\mui5-search\node_modules\react
 
 ## Advanced Version (Coming soon)
 
-Auto complete
+Auto complete - https://codesandbox.io/s/l7syq?file=/src/index.js
 Size (Small and Normal)
 Accessibility
 option to enable keyboard enter

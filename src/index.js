@@ -9,6 +9,9 @@ import './style.css'
 exports.Mui5search = function (props) {
   const [searchText, setSearchText] = useState('')
 
+  let cls = props.opt === 1 ? 's1' : props.opt === 2 ? 's2' : 's3'
+  cls += props.size === 's' ? ' small' : ''
+
   const triggerSearch = () => {
     axios
       .post(props.url, { searchTerm: searchText })
@@ -22,7 +25,9 @@ exports.Mui5search = function (props) {
           id='outlined-search'
           label='Search'
           type='search'
+          tabIndex={-1}
           value={searchText}
+          size={props.size === 's' ? 'small' : ''}
           onChange={e => {
             setSearchText(e.target.value)
           }}
@@ -33,6 +38,8 @@ exports.Mui5search = function (props) {
           label='Search'
           type='search'
           variant='filled'
+          tabIndex={-1}
+          size={props.size === 's' ? 'small' : ''}
           value={searchText}
           onChange={e => {
             setSearchText(e.target.value)
@@ -44,6 +51,8 @@ exports.Mui5search = function (props) {
           label='Search'
           placeholder='Search'
           variant='standard'
+          tabIndex={-1}
+          size={props.size === 's' ? 'small' : ''}
           value={searchText}
           onChange={e => {
             setSearchText(e.target.value)
@@ -51,10 +60,7 @@ exports.Mui5search = function (props) {
         />
       )}
       {/* <ClearIcon></ClearIcon> */}
-      <div
-        className={props.opt === 1 ? 's1' : props.opt === 2 ? 's1' : 's2'}
-        onClick={triggerSearch}
-      >
+      <div className={cls} onClick={triggerSearch}>
         <SearchIcon></SearchIcon>
       </div>
     </>

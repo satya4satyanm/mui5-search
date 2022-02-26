@@ -3,15 +3,8 @@
   "version": "1.0.0",
   "description": "Material UI ^5 simple search.",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d lib --copy-files",
-    "prepare": "babel src -d lib --copy-files",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "publish-docs": "npm run styleguide:build && npm run gh-pages",
-    "gh-pages": "./node_modules/.bin/gh-pages -d styleguide",
     "prettier": "prettier --write \"**/*.{json,md,js}\""
   },
   "keywords": [],
@@ -46,5 +39,6 @@
   },
   "standard": {
     "parser": "babel-eslint"
-  }
+  },
+  "devDependencies": {}
 }

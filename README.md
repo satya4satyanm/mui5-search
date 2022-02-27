@@ -53,35 +53,36 @@ If you are using a different version of react or mui, please stop using this as 
 
 ## Local Development
 
-Uninstall npm package
-install local package npm i path\to\mui5-search
-npm link path\to\mui5-search\node_modules\react
+- Uninstall npm package
+- Install local package npm i path\to\mui5-search
+- npm link path\to\mui5-search\node_modules\react
 
 
 ## Advanced Version (Coming soon)
 
-Auto complete - https://codesandbox.io/s/l7syq?file=/src/index.js
-Size (Small and Normal)
-Accessibility
-option to enable keyboard enter
-Input validation based on regexp
-Cross Browser Fix
-CSP fixes
-Minify
+- Auto complete
+- Size (Small and Normal)
+- Accessibility
+- Option to enable keyboard enter
+- Input validation based on regexp
+- Cross Browser Fix
+- CSP fixes
+- Minify
 
 
 ## Contribute
 
-Checkout the code.
-Create a feature or bugfix branch
-Update or fix the code
-Raise PR to Master branch
-If everything looks good, I will pull in the PR
+- Checkout the code.
+- Create a feature or bugfix branch
+- Update or fix the code
+- Raise PR to Master branch
+- If everything looks good, I will pull in the PR
 
 
 ## Please Donate
 
 This is Satyanarayan Mishra, a Full Stack Architect from Bengaluru, India.
+
 I need few cups of coffee to think and come up with new components like this and to update existing components
 
 Buy me one!

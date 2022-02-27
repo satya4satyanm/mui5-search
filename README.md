@@ -24,10 +24,10 @@ return <Mui5search props />;
 
 ## Features
 
-React Material UI 5 Search with 3 input types controlled by `opt`.
-It receives a POST URL to process the search operation.
-A callback method by which users will receive the response data.
-There are two sizes of the Search UI (Standard and small).
+- React Material UI 5 Search with 3 input types controlled by `opt`.
+- It receives a POST URL to process the search operation.
+- A callback method by which users will receive the response data.
+- There are two sizes of the Search UI (Standard and small).
 
 
 ## SearchBar Properties

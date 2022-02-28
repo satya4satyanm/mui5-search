@@ -6,6 +6,11 @@
 This is a simple search bar for react applications. It uses Latest Material UI.
 
 
+## Demo
+
+[https://codesandbox.io/s/mui5search-sample-hgeyjg?file=/src/App.js](https://codesandbox.io/s/mui5search-sample-hgeyjg?file=/src/App.js)
+
+
 ## Installation
 
 ```shell
@@ -100,7 +105,8 @@ Buy me one!
 
 ## Task list
 
-- [ ] Code examples
+- [x] Project setup
+- [x] Code examples
 - [ ] More customizable options
 - [ ] Style customization
 - [ ] Setup yarn

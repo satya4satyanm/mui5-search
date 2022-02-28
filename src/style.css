@@ -1,37 +1,64 @@
-.s1, .s2 {
+.mui5-search.small {
+    min-width: 258px;
+}
+
+.mui5-search {
+    min-width: 272px;
+}
+
+.mui5-search input {
+    min-width: 150px;
+}
+
+.mui5-search .s1, .mui5-search .s2 {
     border: 1px solid rgba(200, 200, 200, 1);
     border-radius: 3px;
     cursor: pointer;
+    width: 48px;
 }
-.s3 {
+.mui5-search .s3 {
     cursor: pointer;
     margin-left: -40px;
     z-index: 2;
+    width: 48px;
 }
-.s1 svg {
+.mui5-search .s1 svg {
     margin: 16px 11px 7px 11px;
 }
 
-.s1.small svg {
+.mui5-search .s1.small svg {
     margin: 8px 5px 0 5px;
 }
 
-.s2 svg {
+.mui5-search .s2 svg {
     margin: 16px 11px 7px 11px;
 }
 
-.s2.small svg {
+.mui5-search .s2.small svg {
     margin: 12px 7px 3px 7px;
 }
 
-.s3 svg {
+.mui5-search .s3 svg {
     margin: 15px 0 0 15px;
 }
 
-.s3.small {
-    margin-left: -30px;
+.mui5-search .s1.small, .mui5-search .s2.small {
+    width: 35px;
 }
 
-.s3.small svg {
+.mui5-search .s3.small {
+    margin-left: -30px;
+    width: 35px;
+}
+
+.mui5-search .s3.small svg {
     margin: 12px 9px 2px 9px;
+}
+
+.mui5-search .s1.l, .mui5-search .s2.l, .mui5-search .s3.l {
+    float: left;
+}
+
+.mui5-search .s1.r, .mui5-search .s2.r, .mui5-search .s3.r {
+    float: right;
 }

@@ -11,6 +11,9 @@ exports.Mui5search = function (props) {
 
   let cls = props.opt === 1 ? 's1' : props.opt === 2 ? 's2' : 's3'
   cls += props.size === 's' ? ' small' : ''
+  cls += props.buttonPos === 'l' ? ' l' : ' r'
+
+  let wcls = props.size === 's' ? ' small' : ''
 
   const triggerSearch = () => {
     axios
@@ -19,7 +22,7 @@ exports.Mui5search = function (props) {
   }
 
   return (
-    <>
+    <div className={'mui5-search' + wcls}>
       {props.opt === 1 ? (
         <TextField
           id='outlined-search'
@@ -63,6 +66,6 @@ exports.Mui5search = function (props) {
       <div className={cls} onClick={triggerSearch}>
         <SearchIcon></SearchIcon>
       </div>
-    </>
+    </div>
   )
 }

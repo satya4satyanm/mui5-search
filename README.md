@@ -22,12 +22,17 @@ return <Mui5search props />;
 ```
 
 
+## Github link
+
+[React 17 Material UI 5 Search](https://github.com/satya4satyanm/mui5-search)
+
 ## Features
 
-- React Material UI 5 Search with 3 input types controlled by `opt`.
+- React Material UI 5 Search with 3 input type themes.
 - It receives a POST URL to process the search operation.
 - A callback method by which users will receive the response data.
 - There are two sizes of the Search UI (Standard and small).
+- Align the search button on left or right
 
 
 ## SearchBar Properties
@@ -38,6 +43,7 @@ return <Mui5search props />;
 | cb       | `function`  |           | Callback function to receive response data  |
 | opt      | `number`    | 3         | Theme - material ui style ( use 1, 2, 3 )   |
 | size     | `string`    | ""        | TextField size - use "" or "s"              |
+| buttonPos| `string`    | "r"       | Search button position - use "l" or "r"     |
 
 
 ## License
@@ -47,8 +53,8 @@ The files included in this repository are licensed under the ISC license.
 
 ## Warning
 
-This package uses React 17.0.2 and mui 5.4.3
-If you are using a different version of react or mui, please stop using this as it will clash with your project versions
+- This package uses React 17.0.2 and mui 5.4.3
+- If you are using a different version of react or mui, please stop using this as it will clash with your project versions
 
 
 ## Local Development
@@ -60,6 +66,7 @@ If you are using a different version of react or mui, please stop using this as 
 
 ## Advanced Version (Coming soon)
 
+- Typescript Support
 - Auto complete
 - Size (Small and Normal)
 - Accessibility
@@ -68,6 +75,7 @@ If you are using a different version of react or mui, please stop using this as 
 - Cross Browser Fix
 - CSP fixes
 - Minify
+- Hook APIs
 
 
 ## Contribute
@@ -86,3 +94,14 @@ This is Satyanarayan Mishra, a Full Stack Architect from Bengaluru, India.
 I need few cups of coffee to think and come up with new components like this and to update existing components
 
 Buy me one!
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/satya4satyanm?country.x=IN&locale.x=en_GB)
+
+
+## Task list
+
+- [ ] Code examples
+- [ ] More customizable options
+- [ ] Style customization
+- [ ] Setup yarn
+- [ ] Search button hover styles
